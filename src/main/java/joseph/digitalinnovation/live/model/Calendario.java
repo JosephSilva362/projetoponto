@@ -14,11 +14,11 @@ import java.time.LocalDateTime;
 @EqualsAndHashCode
 @Builder
 @Entity
-public class calendario {
+public class Calendario {
     @Id
     private Long id;
     @ManyToOne
-    private tipoData tipoData;
+    private TipoData tipoData;
     private String descricao;
     private LocalDateTime dataEspecial;
 }

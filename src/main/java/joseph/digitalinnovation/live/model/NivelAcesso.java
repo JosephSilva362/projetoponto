@@ -4,7 +4,6 @@ import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 
 @Getter
 @Setter
@@ -13,10 +12,8 @@ import javax.persistence.ManyToOne;
 @EqualsAndHashCode
 @Builder
 @Entity
-public class localidade {
+public class NivelAcesso {
     @Id
-    private  long id;
-    @ManyToOne
-    private nivelAcesso nivelAcesso;
+    private long id;
     private String descricao;
 }

@@ -1,10 +1,10 @@
 package joseph.digitalinnovation.live.model;
 
 import lombok.*;
-import org.hibernate.envers.Audited;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Getter
 @Setter
@@ -13,15 +13,10 @@ import javax.persistence.Id;
 @EqualsAndHashCode
 @Builder
 @Entity
-@Audited
-public class empresa {
+public class Localidade {
     @Id
-    private Long id;
+    private  long id;
+    @ManyToOne
+    private NivelAcesso nivelAcesso;
     private String descricao;
-    private String cnpj;
-    private String endereco;
-    private String bairo;
-    private String cidade;
-    private String estado;
-    private String telefone;
 }

@@ -15,7 +15,7 @@ import javax.persistence.Id;
 @Builder
 @Entity
 @Audited
-public class jornadaTrabalho {
+public class JornadaTrabalho {
 
     @Id
     @GeneratedValue

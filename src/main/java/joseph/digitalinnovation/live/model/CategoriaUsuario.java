@@ -1,6 +1,7 @@
 package joseph.digitalinnovation.live.model;
 
 import lombok.*;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -12,9 +13,9 @@ import javax.persistence.Id;
 @EqualsAndHashCode
 @Builder
 @Entity
-public class ocorrencia {
+@Audited
+public class CategoriaUsuario {
     @Id
     private long id;
-    private String nome;
-    private String descricao;
+    private String desscricao;
 }

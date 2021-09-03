@@ -17,18 +17,18 @@ import java.time.LocalDateTime;
 @Builder
 @Entity
 @Audited
-public class usuario {
+public class Usuario {
     @Id
     private Long id;
     @ManyToOne
-    private categoriaUsuario categoriaUsuario;
+    private CategoriaUsuario categoriaUsuario;
     private String nome;
     @ManyToOne
-    private empresa empresa;
+    private Empresa empresa;
     @ManyToOne
-    private nivelAcesso nivelAcesso;
+    private NivelAcesso nivelAcesso;
     @ManyToOne
-    private  jornadaTrabalho jornadaTrabalho;
+    private JornadaTrabalho jornadaTrabalho;
     private BigDecimal tolerancia;
     private LocalDateTime inicioJornada;
     private LocalDateTime finalJornada;

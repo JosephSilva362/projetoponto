@@ -1,6 +1,7 @@
 package joseph.digitalinnovation.live.model;
 
 import lombok.*;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -12,8 +13,15 @@ import javax.persistence.Id;
 @EqualsAndHashCode
 @Builder
 @Entity
-public class nivelAcesso {
+@Audited
+public class Empresa {
     @Id
-    private long id;
+    private Long id;
     private String descricao;
+    private String cnpj;
+    private String endereco;
+    private String bairo;
+    private String cidade;
+    private String estado;
+    private String telefone;
 }

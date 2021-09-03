@@ -12,8 +12,9 @@ import javax.persistence.Id;
 @EqualsAndHashCode
 @Builder
 @Entity
-public class tipoData {
+public class Ocorrencia {
     @Id
     private long id;
+    private String nome;
     private String descricao;
 }

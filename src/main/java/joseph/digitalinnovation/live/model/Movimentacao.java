@@ -16,7 +16,7 @@ import java.time.LocalDateTime;
 @Builder
 @Entity
 @Audited
-public class movimentacao {
+public class Movimentacao {
     @AllArgsConstructor
     @NoArgsConstructor
     @EqualsAndHashCode
@@ -32,7 +32,7 @@ public class movimentacao {
     private LocalDateTime dataSaida;
     private BigDecimal periodo;
     @ManyToOne
-    private ocorrencia ocorrencia;
+    private Ocorrencia ocorrencia;
     @ManyToOne
-    private calendario calendario;
+    private Calendario calendario;
 }
